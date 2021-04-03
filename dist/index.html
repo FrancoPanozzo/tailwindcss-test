@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content studio 3D</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="shadow-sm fixed inset-x-0 top-0 bg-white z-50">
-      <div class="pr-3 flex items-center">
-        <a href="#" class="flex items-center text-xl font-bold"
+      <div class="pr-3 flex items-center h-11">
+        <a href="#" class="flex items-center"
           ><img
             src="./img/binkies-logo.png"
             alt="Binkies 3D logo"
-            class="w-12 h-12"
+            class="w-9 h-9"
           />
-          <span class="uppercase text-gray-600"
+          <span
+            class="uppercase text-xl tracking-tight font-bold text-gray-600 font-sans-title subpixel-antialiased"
             >content studio
             <span class="uppercase text-yellow-500">3d</span></span
           ></a
@@ -27,7 +33,7 @@
               href="#"
               class="flex items-center justify-center px-2 border-b-2 border-yellow-500 cursor-default"
             >
-              <span class="text-gray-800 text-xs font-semibold">Images</span>
+              <span class="text-gray-800 text-xs font-medium">Images</span>
             </a>
           </li>
           <li class="flex mx-1">
@@ -35,7 +41,7 @@
               href="#"
               class="flex items-center justify-center px-2 border-b-2 border-transparent hover:border-yellow-500"
             >
-              <span class="text-gray-600 text-xs font-semibold">3D Models</span>
+              <span class="text-gray-600 text-xs font-medium">3D Models</span>
             </a>
           </li>
           <li class="flex mx-1">
@@ -43,17 +49,17 @@
               href="#"
               class="flex items-center justify-center px-2 border-b-2 border-transparent hover:border-yellow-500"
             >
-              <span class="text-gray-600 text-xs font-semibold">Views</span>
+              <span class="text-gray-600 text-xs font-medium">Views</span>
             </a>
           </li>
         </ul>
         <button
-          class="px-3 py-2 ml-auto mr-4 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold rounded-sm"
+          class="px-3 py-2 ml-auto mr-4 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded-sm"
         >
           Share as URL
         </button>
         <a href="#" class="p-1 mr-2 text-xs hover:underline">Franco Panozzo</a>
-        <a href="#" class="block rounded-full overflow-hidden w-8 h-8"
+        <a href="#" class="block rounded-full overflow-hidden w-7 h-7"
           ><img
             src="img/profile.jpg"
             alt="Profile picture"
@@ -63,7 +69,7 @@
     </nav>
     <main class="h-screen pt-12 container mx-auto flex">
       <div class="flex flex-col px-6">
-        <h4 class="text-sm text-gray-500 font-semibold my-3">Fine-tuning</h4>
+        <h4 class="text-sm text-gray-500 font-medium my-3">Fine-tuning</h4>
         <div class="text-sm flex items-center mb-2">
           <label class="text-gray-500 mr-3" for="x-axis">X axis:</label
           ><input
@@ -96,7 +102,7 @@
         </div>
         <button
           disabled="disabled"
-          class="py-1 px-3 font-semibold text-white bg-gray-400 rounded text-sm cursor-default"
+          class="py-1 px-3 font-medium text-white bg-gray-400 rounded text-sm cursor-default"
         >
           Reset
         </button>
@@ -111,7 +117,7 @@
         />
       </div>
       <div class="flex-1 px-14 max-w-sm">
-        <h4 class="text-lg text-gray-500 font-semibold my-3 mt-7">
+        <h4 class="text-lg text-gray-500 font-medium my-3 mt-7">
           Phone settings
         </h4>
         <div class="flex items-center mb-3">
@@ -139,7 +145,7 @@
             <button class="rounded-sm shadow bg-gray-100 h-6 w-6"></button>
           </div>
         </div>
-        <h4 class="text-lg text-gray-500 font-semibold my-3 mt-7">Download</h4>
+        <h4 class="text-lg text-gray-500 font-medium my-3 mt-7">Download</h4>
         <div class="grid grid-rows-4 grid-cols-3">
           <label for="width-height" class="text-sm text-gray-500"
             >Width &amp; Height</label
@@ -182,7 +188,7 @@
             <option value="jpeg">JPEG</option>
             <option value="svg">SVG</option>
           </select>
-          <button class="bg-purple-900 rounded-sm text-white font-semibold">
+          <button class="bg-purple-900 rounded-sm text-white font-medium">
             Download
           </button>
         </div>

@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
+
+/* not working */
+/* Roboto font imports */
+/* @font-face {
+  font-family: 'Roboto';
+  src: local('Roboto') url('./fonts/Roboto/Roboto-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto') url('fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto') url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+} */
+
+/* Roboto condensed imports */
+
 @tailwind utilities;
