@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="shadow-sm">
-      <div class="container mx-auto px-4 flex items-center">
+    <nav class="shadow-sm fixed inset-x-0 top-0 bg-white z-50">
+      <div class="container mx-auto pr-3 flex items-center">
         <a href="#" class="flex items-center text-xl font-bold"
           ><img
             src="./img/binkies-logo.png"
@@ -27,7 +27,7 @@
               href="#"
               class="flex items-center justify-center px-2 border-b-2 border-yellow-500 cursor-default"
             >
-              <span class="text-gray-600 text-xs font-semibold">Images</span>
+              <span class="text-gray-800 text-xs font-semibold">Images</span>
             </a>
           </li>
           <li class="flex mx-1">
@@ -61,5 +61,132 @@
         /></a>
       </div>
     </nav>
+    <main class="h-screen pt-12 container mx-auto px-4 flex">
+      <div class="flex flex-col pr-6">
+        <h4 class="text-sm text-gray-500 font-semibold my-3">Fine-tuning</h4>
+        <div class="text-sm flex items-center mb-2">
+          <label class="text-gray-500 mr-3" for="x-axis">X axis:</label
+          ><input
+            type="number"
+            id="x-axis"
+            min="0"
+            value="0"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1 w-16"
+          />
+        </div>
+        <div class="text-sm flex items-center mb-2">
+          <label for="y-axis" class="text-gray-500 mr-3">Y axis:</label
+          ><input
+            type="number"
+            min="0"
+            id="y-axis"
+            value="0"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1 w-16"
+          />
+        </div>
+        <div class="text-sm flex items-center mb-3">
+          <label for="z-axis" class="text-gray-500 mr-3">Z axis:</label
+          ><input
+            type="number"
+            min="0"
+            id="z-axis"
+            value="0"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1 w-16"
+          />
+        </div>
+        <button
+          disabled="disabled"
+          class="py-1 px-3 font-semibold text-white bg-gray-400 rounded text-sm cursor-default"
+        >
+          Reset
+        </button>
+      </div>
+      <div
+        class="flex items-center justify-center flex-1 my-1 self-stretch bg-gray-300"
+      >
+        <img
+          src="img/iphone12.png"
+          alt="iPhone 12"
+          class="w-1/2 max-h-full object-cover"
+        />
+      </div>
+      <div class="flex-1 pl-14 max-w-sm">
+        <h4 class="text-lg text-gray-500 font-semibold my-3 mt-7">
+          Phone settings
+        </h4>
+        <div class="flex items-center mb-3">
+          <label for="phone" class="text-sm text-gray-500 w-20">Phone</label>
+          <select
+            name="phone"
+            id="phone"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1 w-full"
+          >
+            <option value="iphone12">iPhone 12</option>
+            <option value="iphone12">iPhone 11</option>
+            <option value="iphone12">iPhone 10</option>
+            <option value="iphone12">iPhone 8</option>
+            <option value="iphone12">iPhone 7</option>
+          </select>
+        </div>
+        <div class="flex items-center">
+          <label for="phone" class="text-sm text-gray-500 w-20">Color</label>
+          <div class="flex">
+            <button
+              class="rounded-sm shadow bg-yellow-100 h-6 w-6 mr-1"
+            ></button>
+            <button class="rounded-sm shadow bg-gray-600 h-6 w-6 mr-1"></button>
+            <button class="rounded-sm shadow bg-blue-900 h-6 w-6 mr-1"></button>
+            <button class="rounded-sm shadow bg-gray-100 h-6 w-6"></button>
+          </div>
+        </div>
+        <h4 class="text-lg text-gray-500 font-semibold my-3 mt-7">Download</h4>
+        <div class="grid grid-rows-4 grid-cols-3">
+          <label for="width-height" class="text-sm text-gray-500"
+            >Width &amp; Height</label
+          >
+          <input
+            type="number"
+            id="width-height"
+            value="5"
+            min="0"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1"
+          />
+          <select
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1"
+          >
+            <option value="in">Inches</option>
+            <option value="cm">Centimeters</option>
+          </select>
+          <label for="resolution" class="text-sm text-gray-500"
+            >Resolution</label
+          >
+          <input
+            type="number"
+            id="resolution"
+            value="300"
+            min="0"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1"
+          />
+          <select
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1"
+          >
+            <option value="px/in">Pixels/Inch</option>
+            <option value="px/cm">Pixels/Centimeter</option>
+          </select>
+          <label for="file-type" class="text-sm text-gray-500">File type</label>
+          <select
+            id="file-type"
+            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-1 pl-2 pr-1"
+          >
+            <option value="png">PNG</option>
+            <option value="jpeg">JPEG</option>
+            <option value="svg">SVG</option>
+          </select>
+          <button class="bg-purple-900 rounded-sm text-white font-semibold">
+            Download
+          </button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
