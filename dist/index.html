@@ -69,8 +69,10 @@
     </nav>
     <main class="h-screen pt-12 flex">
       <div class="flex flex-col px-6">
-        <h4 class="text-sm text-gray-500 font-medium my-3">Fine-tuning</h4>
-        <div class="text-sm flex items-center mb-2">
+        <h4 class="text-xs text-gray-500 font-medium my-3 subpixel-antialiased">
+          Fine-tuning
+        </h4>
+        <div class="text-xs flex items-center mb-2">
           <label class="text-gray-500 mr-3" for="x-axis">X axis:</label
           ><input
             type="number"
@@ -80,7 +82,7 @@
             class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-0.5 pl-2 pr-1 w-14 appearance-none-input"
           />
         </div>
-        <div class="text-sm flex items-center mb-2">
+        <div class="text-xs flex items-center mb-2">
           <label for="y-axis" class="text-gray-500 mr-3">Y axis:</label
           ><input
             type="number"
@@ -90,7 +92,7 @@
             class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-0.5 pl-2 pr-1 w-14 appearance-none-input"
           />
         </div>
-        <div class="text-sm flex items-center mb-3">
+        <div class="text-xs flex items-center mb-2">
           <label for="z-axis" class="text-gray-500 mr-3">Z axis:</label
           ><input
             type="number"
@@ -102,7 +104,7 @@
         </div>
         <button
           disabled="disabled"
-          class="py-1 px-3 font-medium text-white bg-gray-400 rounded text-sm cursor-default"
+          class="py-1 px-3 font-medium text-white bg-gray-400 rounded text-xs cursor-default"
         >
           Reset
         </button>
@@ -117,13 +119,15 @@
         />
       </div>
       <div class="px-14 max-w-lg">
-        <h4 class="text-lg text-gray-500 font-medium my-3 mt-7">
+        <h4
+          class="text-md text-gray-500 font-medium my-3 mt-7 subpixel-antialiased"
+        >
           Phone settings
         </h4>
         <div class="flex items-center mb-3">
-          <label for="phone" class="text-sm text-gray-500 w-20">Phone</label>
+          <label for="phone" class="text-xs text-gray-500 w-20">Phone</label>
           <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-7 text-gray-500 flex-1"
+            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500 flex-1"
           >
             <svg
               class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
@@ -164,7 +168,7 @@
             <select
               name="phone"
               id="phone"
-              class="absolute inset-0 appearance-none py-0.5 pl-1 pr-6 w-full"
+              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
             >
               <option value="iphone12">iPhone 12 Pro</option>
               <option value="iphone12">iPhone 11</option>
@@ -175,7 +179,7 @@
           </div>
         </div>
         <div class="flex items-center">
-          <label for="phone" class="text-sm text-gray-500 w-20">Color</label>
+          <label for="phone" class="text-xs text-gray-500 w-20">Color</label>
           <div class="flex">
             <button
               class="border border-black rounded-sm bg-yellow-100 h-6 w-6 mr-1"
@@ -191,11 +195,15 @@
             ></button>
           </div>
         </div>
-        <h4 class="text-lg text-gray-500 font-medium mb-2 mt-7">Download</h4>
-        <div class="grid grid-rows-4 grid-cols-3 gap-y-2 gap-x-3">
+        <h4
+          class="text-md text-gray-500 font-medium mb-2 mt-7 subpixel-antialiased"
+        >
+          Download
+        </h4>
+        <div class="grid grid-rows-4 grid-cols-3 gap-y-0.5 gap-x-3">
           <label
             for="width-height"
-            class="text-sm text-gray-500 whitespace-nowrap self-center w-24"
+            class="text-xs text-gray-500 whitespace-nowrap self-center w-24"
             >Width &amp; Height</label
           >
           <input
@@ -203,10 +211,10 @@
             id="width-height"
             value="5"
             min="0"
-            class="py-0.5 ring-1 ring-gray-300 text-gray-500 rounded-sm pl-2 pr-1 appearance-none-input self-center"
+            class="text-xs h-6 ring-1 ring-gray-300 text-gray-500 rounded-sm pl-2 pr-1 appearance-none-input self-center"
           />
           <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-7 text-gray-500"
+            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500"
           >
             <svg
               class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
@@ -245,13 +253,13 @@
               <g></g>
             </svg>
             <select
-              class="absolute inset-0 appearance-none py-0.5 pl-1 pr-6 w-full"
+              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
             >
               <option value="in">Inches</option>
               <option value="cm">Centimeters</option>
             </select>
           </div>
-          <label for="resolution" class="text-sm text-gray-500 self-center w-24"
+          <label for="resolution" class="text-xs text-gray-500 self-center w-24"
             >Resolution</label
           >
           <input
@@ -259,10 +267,10 @@
             id="resolution"
             value="300"
             min="0"
-            class="ring-1 ring-gray-300 text-gray-500 rounded-sm py-0.5 pl-2 pr-1 appearance-none-input self-center"
+            class="text-xs ring-1 ring-gray-300 text-gray-500 rounded-sm h-6 pl-2 pr-1 appearance-none-input self-center"
           />
           <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-7 text-gray-500"
+            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500"
           >
             <svg
               class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
@@ -301,17 +309,17 @@
               <g></g>
             </svg>
             <select
-              class="absolute inset-0 appearance-none py-0.5 pl-1 pr-6 w-full"
+              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
             >
               <option value="px/in">Pixels/Inch</option>
               <option value="px/cm">Pixels/Centimeter</option>
             </select>
           </div>
-          <label for="file-type" class="text-sm text-gray-500 self-center w-24"
+          <label for="file-type" class="text-xs text-gray-500 self-center w-24"
             >File type</label
           >
           <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-7 text-gray-500"
+            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500"
           >
             <svg
               class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
@@ -352,7 +360,7 @@
 
             <select
               id="file-type"
-              class="absolute inset-0 appearance-none py-0.5 pl-1 pr-6 w-full"
+              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
             >
               <option value="png">PNG</option>
               <option value="jpeg">JPEG</option>
