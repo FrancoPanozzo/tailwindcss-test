@@ -25,3 +25,10 @@
 /* Roboto condensed imports */
 
 @tailwind utilities;
+
+@layer utilities {
+  .appearance-none-input {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+}
