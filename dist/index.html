@@ -422,177 +422,187 @@
         >
           Download
         </h4>
-        <div class="grid grid-rows-3 grid-cols-3 gap-y-3 gap-x-3">
-          <label
-            for="width-height"
-            class="text-xs text-gray-500 whitespace-nowrap self-center w-24"
-            >Width &amp; Height</label
-          >
-          <input
-            type="number"
-            id="width-height"
-            value="5"
-            min="0"
-            class="text-xs h-6 ring-1 ring-gray-300 text-gray-500 rounded-sm pl-2 pr-1 appearance-none-input self-center"
-          />
-          <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500"
-          >
-            <svg
-              class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="292.362px"
-              height="292.362px"
-              viewBox="0 0 292.362 292.362"
-              style="enable-background: new 0 0 292.362 292.362"
-              xml:space="preserve"
+        <div class="flex">
+          <div class="flex flex-col w-22 pr-3">
+            <label
+              for="width-height"
+              class="text-xs text-gray-500 whitespace-nowrap mb-3 h-6 flex items-center"
+              >Width &amp; Height</label
+            ><label
+              for="resolution"
+              class="text-xs text-gray-500 mb-3 h-6 flex items-center"
+              >Resolution</label
             >
-              <g>
-                <path
-                  d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
-		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
-		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
-                />
-              </g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-            </svg>
-            <select
-              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
+            <label
+              for="file-type"
+              class="text-xs text-gray-500 mb-3 h-6 flex items-center"
+              >File type</label
             >
-              <option value="in">Inches</option>
-              <option value="cm">Centimeters</option>
-            </select>
           </div>
-          <label for="resolution" class="text-xs text-gray-500 self-center w-24"
-            >Resolution</label
-          >
-          <input
-            type="number"
-            id="resolution"
-            value="300"
-            min="0"
-            class="text-xs ring-1 ring-gray-300 text-gray-500 rounded-sm h-6 pl-2 pr-1 appearance-none-input self-center"
-          />
-          <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500"
-          >
-            <svg
-              class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="292.362px"
-              height="292.362px"
-              viewBox="0 0 292.362 292.362"
-              style="enable-background: new 0 0 292.362 292.362"
-              xml:space="preserve"
+          <div class="flex flex-col w-28 pr-3">
+            <input
+              type="number"
+              id="width-height"
+              value="5"
+              min="0"
+              class="text-xs h-6 ring-1 ring-gray-300 text-gray-500 rounded-sm mb-3 pl-2 pr-1 appearance-none-input"
+            />
+            <input
+              type="number"
+              id="resolution"
+              value="300"
+              min="0"
+              class="text-xs ring-1 ring-gray-300 text-gray-500 rounded-sm mb-3 h-6 pl-2 pr-1 appearance-none-input"
+            />
+            <div
+              class="relative ring-1 ring-gray-300 rounded-sm mb-3 h-6 text-gray-500"
             >
-              <g>
-                <path
-                  d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+              <svg
+                class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="292.362px"
+                height="292.362px"
+                viewBox="0 0 292.362 292.362"
+                style="enable-background: new 0 0 292.362 292.362"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
 		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
 		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
-                />
-              </g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-            </svg>
-            <select
-              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
-            >
-              <option value="px/in">Pixels/Inch</option>
-              <option value="px/cm">Pixels/Centimeter</option>
-            </select>
-          </div>
-          <label for="file-type" class="text-xs text-gray-500 self-center w-24"
-            >File type</label
-          >
-          <div
-            class="relative self-center ring-1 ring-gray-300 rounded-sm h-6 text-gray-500"
-          >
-            <svg
-              class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="292.362px"
-              height="292.362px"
-              viewBox="0 0 292.362 292.362"
-              style="enable-background: new 0 0 292.362 292.362"
-              xml:space="preserve"
-            >
-              <g>
-                <path
-                  d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
-		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
-		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
-                />
-              </g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-            </svg>
+                  />
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
 
-            <select
-              id="file-type"
-              class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
+              <select
+                id="file-type"
+                class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
+              >
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="svg">SVG</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex flex-col w-36">
+            <div
+              class="relative ring-1 ring-gray-300 rounded-sm h-6 mb-3 text-gray-500"
             >
-              <option value="png">PNG</option>
-              <option value="jpeg">JPEG</option>
-              <option value="svg">SVG</option>
-            </select>
+              <svg
+                class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="292.362px"
+                height="292.362px"
+                viewBox="0 0 292.362 292.362"
+                style="enable-background: new 0 0 292.362 292.362"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
+                  />
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+              <select
+                class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
+              >
+                <option value="in">Inches</option>
+                <option value="cm">Centimeters</option>
+              </select>
+            </div>
+
+            <div
+              class="relative ring-1 ring-gray-300 rounded-sm h-6 mb-3 text-gray-500"
+            >
+              <svg
+                class="pointer-events-none h-3 w-3 absolute right-2 z-10 text-gray-600 fill-current transform -translate-y-1/2 top-1/2"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="292.362px"
+                height="292.362px"
+                viewBox="0 0 292.362 292.362"
+                style="enable-background: new 0 0 292.362 292.362"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
+                  />
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+              <select
+                class="text-xs absolute inset-0 appearance-none pl-1 pr-6 w-full"
+              >
+                <option value="px/in">Pixels/Inch</option>
+                <option value="px/cm">Pixels/Centimeter</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-x-3 mt-3">
+        <div class="flex justify-end">
           <button
-            class="bg-purple-900 hover:bg-purple-700 rounded-sm text-white font-medium row-start-4 col-span-2 py-1 col-start-2"
+            class="text-sm bg-purple-900 hover:bg-purple-700 rounded-sm text-white font-medium w-64 h-8"
           >
             Download
           </button>
